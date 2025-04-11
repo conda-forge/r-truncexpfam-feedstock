@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TruncExpFam_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TruncExpFam/TruncExpFam_{{ version }}.tar.gz
-  sha256: c6cbf67ffbe1bf04c11973f9ff41f41f4c9a69e63a13c54d07cb18f92f011d53
+  sha256: d2443cd2b89a341db1f540effd8986993cd574ce2816709f84e84b84ce2adcee
 
 build:
   number: 0
