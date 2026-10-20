@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/TruncExpFam_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/TruncExpFam/TruncExpFam_{{ version }}.tar.gz
-  sha256: d2443cd2b89a341db1f540effd8986993cd574ce2816709f84e84b84ce2adcee
+  sha256: 3764eedeb15ec94b35ba9c8149045d9bf101043906532eeb02a2d73948129340
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,8 +44,8 @@ about:
   home: https://ocbe-uio.github.io/TruncExpFam/
   dev_url: https://github.com/ocbe-uio/TruncExpFam
   license: GPL-3.0-only
-  summary: Handles truncated members from the exponential family of probability distributions. Contains functions such as rtruncnorm() and dtruncpois(), which are truncated versions of rnorm() and dpois() from the stats package that also offer richer output containing, for example, the distribution parameters. It also provides
-    functions to retrieve the original distribution parameters from a truncated sample by maximum-likelihood estimation.
+  summary: Handles truncated members from the exponential family of probability distributions. Contains functions such as rtruncnorm() and dtruncpois(), which are truncated versions of rnorm() and dpois() from the stats package that also offer richer output containing, for example, the distribution parameters. It also 
+    provides functions to retrieve the original distribution parameters from a truncated sample by maximum-likelihood estimation.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
